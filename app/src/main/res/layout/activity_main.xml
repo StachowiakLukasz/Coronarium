@@ -15,8 +15,9 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:backgroundTint="#7A000000"
-        android:text="Additional Info"
+        android:text="creators"
         android:textColor="#FFFFFF"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +25,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Spinner
+        android:visibility="visible"
         android:id="@+id/spinner1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,6 +37,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
+        android:visibility="visible"
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,6 +57,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:visibility="visible"
         android:id="@+id/todayCases"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,6 +72,7 @@
         app:layout_constraintTop_toBottomOf="@+id/spinner1" />
 
     <TextView
+        android:visibility="visible"
         android:id="@+id/todayDeaths"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,6 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/todayCases" />
 
     <TextView
+        android:visibility="visible"
         android:id="@+id/cases"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,6 +100,8 @@
         app:layout_constraintTop_toBottomOf="@+id/todayDeaths" />
 
     <TextView
+        android:visibility="visible"
+        android:inputType="textVisiblePassword"
         android:id="@+id/deaths"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -107,6 +115,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cases" />
 
     <TextView
+        android:visibility="visible"
         android:id="@+id/recovered"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -118,5 +127,49 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/deaths" />
+
+    <EditText
+        android:visibility="visible"
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Or find it..."
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/credits1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/creators"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/credits2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/hyperlink"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/credits1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
