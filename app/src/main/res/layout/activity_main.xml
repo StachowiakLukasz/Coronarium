@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:backgroundTint="#7A000000"
-        android:text="creators"
+        android:text="creator"
         android:textColor="#FFFFFF"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -144,17 +144,16 @@
         app:layout_constraintTop_toBottomOf="@+id/spinner1" />
 
     <TextView
-        android:visibility="gone"
         android:id="@+id/credits1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="300dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/creators"
+        android:text="@string/creator"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="25sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -164,7 +163,7 @@
         android:id="@+id/credits2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="150dp"
         android:text="@string/hyperlink"
         android:textAlignment="center"
         android:textSize="18sp"

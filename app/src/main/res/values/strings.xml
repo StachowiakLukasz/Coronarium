@@ -30,5 +30,5 @@
 
 
     <string name="hyperlink">API Source\n<a href="https://coronavirus-19-api.herokuapp.com/">coronavirus-19-api.herokuapp.com</a></string>
-    <string name="creators">Creators:\n\nŁukasz Stachowiak\nGrzegorz Łabędzki\nWiktor Krajewski\n</string>
+    <string name="creator">Creator\n<a href="https://github.com/StachowiakLukasz">Łukasz Stachowiak</a></string>
 </resources>

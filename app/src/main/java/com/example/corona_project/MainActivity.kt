@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             state = !state
 
             if(state == true) button.text = "< BACK"
-            else button.text = "CREATORS"
+            else button.text = "CREATOR"
         }
 
         "https://coronavirus-19-api.herokuapp.com/countries"
@@ -136,6 +136,10 @@ class MainActivity : AppCompatActivity() {
         val linkTextView = findViewById<TextView>(R.id.credits2)
         linkTextView.movementMethod = LinkMovementMethod.getInstance();
         linkTextView.setLinkTextColor(Color.WHITE)
+
+        val linkTextView2 = findViewById<TextView>(R.id.credits1)
+        linkTextView2.movementMethod = LinkMovementMethod.getInstance();
+        linkTextView2.setLinkTextColor(Color.WHITE)
     }
 
     fun View.hideKeyboard() {
